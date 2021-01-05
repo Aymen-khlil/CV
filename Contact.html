@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>    
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="style2.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  	var btn = document.querySelector(".btn");
+			var menu = document.querySelector(".menu");
+			var anchors = document.querySelectorAll(".anr");
+
+			btn.addEventListener("click", function(){
+			  this.classList.toggle("active");
+			  menu.classList.toggle("active");
+			});
+		});
+	</script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="btn">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html" data-text="Acceuil"><i class="fas fa-home"></i></a></li>
+                <li><a href="Portflio.html" data-text="Portoflio"><i class="fas fa-user"></i></a></li>
+                <li><a href="Contact.html" data-text="Contact"><i class="fas fa-address-book"></i></a></li>
+                 
+            </ul>  
+        </div>
+    </div>
+    <div class="container">
+        <div style="text-align:center">
+          <h2>Contacter Moi</h2>
+          <p>Vous êtes toujours le bienvenu, vous pouvez me laisser un message:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="./img/tof.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">Prenom</label>
+              <input type="text" id="fname" name="firstname" placeholder="Votre Prénom..">
+              <label for="lname">Nom</label>
+              <input type="text" id="lname" name="lastname" placeholder="Votre Nom..">
+              <label for="country">Pays</label>
+              <select id="country" name="country">
+                <option value="australia">Tunisie</option>
+                <option value="canada">France</option>
+                <option value="usa">Autre</option>
+              </select>
+              <label for="subject">Sujet</label>
+              <textarea id="subject" name="subject" placeholder="J'attend votre message.." style="height:170px"></textarea>
+              <input type="submit" value="Envoyer">
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>  
+        <div class="aaa">
+            <ul>
+                <li><a href="index.html"> Acceuil</a></li>
+                <li><a href="Portflio.html"> Portoflio</a></li>
+                <li><a href="Contact.html"> Contact</a></li>
+            </ul>     
+        </div>
+        <p class="zzz">Inspired from different resources</p>
+      </footer>
+</body>
+</html>

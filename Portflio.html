@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portoflio</title>
+    <link rel="stylesheet" href="portflio.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  	var btn = document.querySelector(".btn");
+			var menu = document.querySelector(".menu");
+			var anchors = document.querySelectorAll(".anr");
+
+			btn.addEventListener("click", function(){
+			  this.classList.toggle("active");
+			  menu.classList.toggle("active");
+			});
+		});
+	</script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="btn">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html" data-text="Acceuil"><i class="fas fa-home"></i></a></li>
+                <li><a href="Portflio.html" data-text="Portoflio"><i class="fas fa-user"></i></a></li>
+                <li><a href="Contact.html" data-text="Contact"><i class="fas fa-address-book"></i></a></li>
+                 
+            </ul>  
+        </div>
+    </div>
+    <div class="about-section">
+        <h1>Mes Traveaux</h1>
+        <p>Vous trouvez ici mes differents traveaux quelque soit en freelance ou dans des projets.</p>
+        
+      </div>
+      
+      <h2 style="text-align:center">Mes Logo</h2>
+      <div class="row">
+        
+        <div class="column">
+          <div class="card">
+            <img src="./img/1.png" alt="A&A Salon" style="width:50%">
+            <div class="container">
+              <h2>A&A Salon</h2>
+              <p class="title">Coiffure</p>
+              <p>Logo pour un salon de Coiffure</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="./img/2.png" alt="Coffee" style="width:50%">
+            <div class="container">
+              <h2>Coffee</h2>
+              <p class="title">café</p>
+              <p>logo pour une marque de café potentiel.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="./img/3.png" alt="Logo" style="width:50%">
+            <div class="container">
+              <h2>L&Tiger</h2>
+              <p class="title">Mon logo</p>
+              <p>C'est mon logo personel</p>              
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+      
+      <div class="row">
+        
+        <div class="column">
+          <div class="card">
+            <img src="./img/4.png" alt="ZAERAO" style="width:50%">
+            <div class="container">
+              <h2>ZAERAO</h2>
+              <p class="title">Campaign</p>
+              <p>Logo pour une campaign</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="./img/5.png" alt="Coffee" style="width:36%">
+            <div class="container">
+              <h2>Coffee</h2>
+              <p class="title">Café</p>
+              <p>Logo pour une cafétiere.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="./img/6.png" alt="Biblio" style="width:50%">
+            <div class="container">
+              <h2>Biblio</h2>
+              <p class="title">Bibliotheque</p>
+              <p>Logo pour une Bibliotheque</p>              
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+      <footer>  
+        <div class="aaa">
+            <ul>
+                <li><a href="index.html"> Acceuil</a></li>
+                <li><a href="Portflio.html"> Portoflio</a></li>
+                <li><a href="Contact.html"> Contact</a></li>
+            </ul>     
+        </div>
+        <p class="zzz">Inspired from different resources</p>
+      </footer>
+</body>
+</html>
